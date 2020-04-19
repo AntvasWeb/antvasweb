@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+:root{
+    --color-primario: #45eba5;
+    --color-secundario: #21aba5;
+    --color-tercero: #1d566e;
+    --color-cuarto: #163a5f;
+    --color-quinto: #dadada;
+    --color-rgba1: linear-gradient(to right, rgba(29, 86, 110, .9), rgba(22, 58, 95, .9));
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppons', sans-serif;
+    font-family: 'Oswald', sans-serif;
+}
+/* html {
+    scroll-behavior: smooth;
+} */
+body{
+    background: var(--color-quinto);
+    font-size: 16px;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* ------ ------ ------ ------ ------
+ REDES SOCIALES 
+ ------ ------ ------ ------ ------ */
+
+/*FACEBOOK*/
+
+.facebookBlanco{
+	color:white;
+}
+
+.facebookNegro{
+	color:black;
+}
+
+.facebookColor{
+	color:#46639f;
+	/* background:#46639f; */
+}
+
+/*YOUTUBE*/
+
+.youtubeColor{
+    color: #d6513e;
+    
+	
+}
+
+.youtubeBlanco{
+	color:white;
+}
+
+.youtubeNegro{
+	color:black;
+}
+
+/*TWITTER*/
+
+.twitterColor{
+	color:#0ab2e6;
+	/* background:#0ab2e6; */
+}
+
+.twitterBlanco{
+	color:white;
+}
+
+.twitterNegro{
+	color:black;
+}
+
+/*GOOGLE PLUS*/
+
+.googleColor{
+	color:#d71617;
+	
+}
+
+.googleBlanco{
+	color:white;
+}
+
+.googleNegro{
+	color:black;
+}
+
+/*INSTAGRAM*/
+
+.instagramColor{
+    /* color:white; */
+    color : #ee1d5f;
+	/* color:linear-gradient(45deg, #fca925, #ee1d5f,  #6350a2); */
+
+}
+
+.instagramBlanco{
+	color:white;
+}
+
+.instagramNegro{
+	color:black;
+}
+

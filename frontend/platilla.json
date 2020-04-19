@@ -1,0 +1,8 @@
+{
+    "colorPrimario":"#45eba5",
+    "colorSecundario": "#21aba5",
+    "colorTercero": "#1d566e",
+    "colorCuarto": "#163a5f",
+    "colorQuinto": "#dadada",
+    "colorRgba1": "linear-gradient(to right, rgba(29, 86, 110, .9), rgba(22, 58, 95, .9))"
+}

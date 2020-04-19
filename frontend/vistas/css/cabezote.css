@@ -1,0 +1,218 @@
+.av-cabezote{
+    background: var(--color-rgba1);
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all .5s ease-in-out;
+}
+
+.av-caja-logo{
+    width: 8rem;
+}
+
+.av-caja-logo img{
+    width: 100%;
+}
+
+.av-cabezote .av-menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+}
+
+.av-cabezote .av-menu li {
+    width: 100%;
+    text-align: center;
+    padding: .8rem 0;
+    /* margin: 0 1.5rem; */
+}
+
+.av-cabezote .av-menu li a{
+    color: var(--color-primario);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    text-align: center;
+    
+}
+.av-cabezote.sticky{
+    background: var(--color-rgba1);
+    height: 4rem;
+}
+
+
+/* ------ ------ ------ ------ ------
+ MENU HAMBUERGUZA 
+ ------ ------ ------ ------ ------ */
+
+ .av-cabezote .av-hamburgueza{
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 1.8rem;
+    cursor: pointer;
+ }
+
+ .av-cabezote .av-hamburgueza span{
+    position: absolute;
+    width: 2rem;
+    height: .3rem;
+    background: var(--color-primario);
+    transition: all .5s ease-in-out;
+ }
+
+ .av-hamburgueza span:nth-child(1){
+     transform: translateY(-0.6rem);
+ }
+ .av-hamburgueza span:nth-child(3){
+    transform: translateY(0.6rem);
+}
+
+.av-hamburgueza.activo span:nth-child(1){
+    transform: rotate(45deg)
+}
+.av-hamburgueza.activo span:nth-child(3){
+    transform: rotate(-45deg);
+}
+.av-hamburgueza.activo span:nth-child(2){
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+/* ------ ------ ------ ------ ------
+ REDES SOCIALES 
+ ------ ------ ------ ------ ------ */
+ .av-redesSociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.av-redesSociales li {
+    margin: 0 .5rem;
+}
+
+
+.av-redesSociales li a i {
+    font-size: 1.2rem;
+    padding: .2rem;
+
+}
+
+/* ------ ------ ------ ------ ------
+ RESPONSIVE 
+ ------ ------ ------ ------ ------ */
+
+ /* ------ ------ ------ ------ ------ ------ ------ 
+ ESCRITORIO GRANDE (LG revisamos en 1366px en adelante)
+  ------ ------ ------ ------ ------ ------ ------ */
+ @media (min-width:1200px) {
+ }
+ /* ------ ------ ------ ------ ------ ------ ------
+ ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
+  ------ ------ ------ ------ ------ ------ ------ */
+ @media (max-width:1199px) and (min-width:992px) {
+    .av-cabezote .av-menu li:last-child{
+        display: none;
+    }
+    .av-cabezote .av-menu li{
+        margin: 0 1.5rem;
+    }
+ }
+ /* ------ ------ ------ ------ ------ ------ ------
+ ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
+  ------ ------ ------ ------ ------ ------ ------ */
+ @media (max-width:991px) and (min-width:768px) {
+
+    .av-cabezote .av-hamburgueza{
+        
+        display: flex;
+    }
+
+    .av-cabezote{
+        
+        justify-content: space-between;
+        padding: 1.5rem;
+    }
+
+    .av-cabezote .av-menu{
+        
+        position: absolute;
+        flex-direction: column;
+        background: var(--color-tercero);
+        width: 70vw;
+        height: 80vh;
+        top: 5rem;
+        right: 0;
+        transform: translateX(100%);
+        background: var(--color-rgba1);
+        transition: transform .5s ease-in;
+    }
+    .av-cabezote .av-menu li{
+        
+        border-bottom: 1px solid var(--color-cuarto);
+        
+    }
+    .sticky .av-menu {
+        background: var(--color-rgba1);
+        top: 4rem;
+        
+    }
+ }
+ /* ------ ------ ------ ------ ------ ------ ------
+ MOVIL (XS revisamos en 320px)
+  ------ ------ ------ ------ ------ ------ ------*/
+ @media (max-width:767px) {
+
+    body{
+        overflow-x: hidden;
+    }
+    .av-cabezote .av-hamburgueza{
+        
+        display: flex;
+    }
+
+    .av-cabezote{
+        justify-content: space-between;
+        padding: 1.5rem;
+    }
+
+    .av-cabezote .av-menu{
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: var(--color-tercero);
+        width: 60%;
+        top: 5rem;
+        right: 0;
+        transform: translateX(100%);
+        background: var(--color-rgba1);
+        transition: all .5s ease-in;
+    }
+    .av-cabezote .av-menu li{
+        border-bottom: 1px solid var(--color-cuarto);
+    }
+    
+    .av-menu.sticky {
+        top: 4rem;
+    }
+    .av-cabezote .av-menu li {
+       margin: 0;
+    }
+    .av-redesSociales li {
+        margin: 0;
+    }
+
+}
+
+.av-menu.activo{
+
+    transform: translate(0);
+    
+}
